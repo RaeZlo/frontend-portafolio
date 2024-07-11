@@ -1,0 +1,141 @@
+:root {
+  --cream: #F8EDE3;
+  --light-green: #BDD2B6;
+  --sage-green: #A2B29F;
+  --olive-green: #798777;
+}
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--olive-green);
+  font-family: 'Arial', sans-serif;
+}
+
+
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--sage-green);
+  color: white;
+  font-size: 2em;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: var(--olive-green);
+}
+
+
+main {
+  height: 50vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+.container {
+  height: 40vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  color: white;
+  flex: 1;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.5s ease-in-out;
+}
+
+
+.panel h6 {
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+.panel.active {
+  flex: 5;
+}
+
+
+.panel.active h6 {
+  opacity: 1;
+}
+
+
+section {
+  background-color: var(--cream);
+  padding: 20px;
+  text-align: center;
+  color: var(--olive-green);
+}
+
+
+footer {
+  background-color: var(--sage-green);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: var(--olive-green);
+  color: white;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Added to remove underline */
+  transition: background-color 0.3s;
+}
+
+
+.button:hover {
+  background-color: var(--light-green);
+  color: var(--olive-green);
+}
+
+
+.about {
+  background-color: var(--cream);
+  padding: 20px;
+  text-align: center;
+  color: var(--olive-green);
+}
+
+
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+
+.about p {
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 800px;
+}
