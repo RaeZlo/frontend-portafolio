@@ -1,0 +1,61 @@
+.open-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: black;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  background-color: rgb(34, 31, 31);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav.visible {
+  transform: translateX(0);
+}
+
+.close-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.3;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+nav ul li {
+  margin: 15px 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+#content {
+  margin-top: 60px; /* Espacio para el header fijo */
+  padding: 20px;
+}
